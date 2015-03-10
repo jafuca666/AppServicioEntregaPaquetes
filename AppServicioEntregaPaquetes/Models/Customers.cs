@@ -24,7 +24,7 @@ namespace AppServicioEntregaPaquetes.Models
             
                     }
 
-           public Customers(string nombres, string direccion, string identificacion, string apellidos, string email, string telefonos)
+           public Customers(string identificacion,string nombres,string apellidos, string direccion,   string email, string telefonos)
         {
 
             this.identificacion = identificacion;

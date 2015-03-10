@@ -6,20 +6,26 @@ using System.ComponentModel;
 
 namespace AppServicioEntregaPaquetes.Models
 {
-    public class OvernightPackage : Package
+    public class TwoDayPackage : Package
     {
-        float cargoAdicional;
 
-        public float CargoAdicional
+        float cuota;
+
+        public float Cuota
         {
-            get { return cargoAdicional; }
-            set { cargoAdicional = value; }
+            get { return cuota; }
+            set { cuota = value; }
         }
 
-        public override float calculateCost()
+
+        public override float calculateCost(/*float peso, float costoGramo*/)
         {
+
+
             throw new NotImplementedException();
         }
+
+
 
     }
 }
